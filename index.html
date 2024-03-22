@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pause</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="Addcart.html">
+    <link rel="stylesheet" href="Addcart.css">
+    
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <img loading="eager" alt="">
+            <img src="logo5.png" alt="">
+        </div>
+        <div class="search">
+            <form action="">
+                <input type="text" placeholder="search Here">
+            </form>
+
+        </div>
+        <div class="icons">
+            <a href="#" class="fa fa-address-book-o"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="	fa fa-shopping-bag"></a>
+            <a href="#" class="fa fa-bars"></a>
+            <a href="#" class="  "></a>
+
+        </div>
+    </div>
+    <div class="dropdown">
+        <h3 class="t4s-d-flex t4s-align-items-center">
+            <span class="t4s-d-inline-block t4s-truncate">Shop By Activity</span>
+            <select>
+                <option value="select" hidden></option>
+                <option value="music">Music</option>
+                <option value="music">Binge watch</option>
+                <option value="music">party</option>
+                <option value="music">outings</option>
+                <option value="music">Workouts</option>
+                <option value="music">Work calls</option>
+
+
+
+            </select>
+        </h3>
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img1.jpg" alt="" style="width:100%;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img2.jpg" alt="" style="width:100%;">
+
+        </div>
+        <div class="mySlides fade">
+            <img src="img3.jpg" alt="" style="width:100%;">
+
+        </div>
+        <div class="mySlides fade">
+            <img src="img4.jpg" alt="" style="width:100%;">
+
+        </div>
+        <div class="mySlides fade">
+            <img src="img5.jpg" alt="" style="width:100%;">
+
+        </div>
+        <div class="mySlides fade">
+            <img src="img6.jpg" alt="" style="width:100%;">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dot-container" style="text-align:center">
+        <span class="dot" onclick="currentSlide1(1)"></span>
+        <span class="dot" onclick="currentSlide1(2)"></span>
+        <span class="dot" onclick="currentSlide1(3)"></span>
+        <span class="dot" onclick="currentSlide1(4)"></span>
+        <span class="dot" onclick="currentSlide1(5)"></span>
+        <span class="dot" onclick="currentSlide1(6)"></span>
+        <span class="dot" onclick="currentSlide1(7)"></span>
+    </div><br>
+
+
+
+
+    <div class="parent1">
+        <div class="card" id="product1">
+            <img src="https://ubonindia.com/cdn/shop/files/neckband_5017fde6-303b-46aa-af32-55b2448e7b03.webp?v=1683264640&width=200" alt="Nackband" class="slides1">
+            <h1>Nackband</h1>
+            <p class="price">₹1500</p>
+            <p2 class="ProductDiscription" hidden >ProBass EQCharge</p2>
+            <p><button onclick="addToCart('product1')">Add to Cart</button></p>
+            
+        </div>
+    
+        <div class="card" id="product2">
+            <img src="https://ubonindia.com/cdn/shop/files/charger_fa11164e-f41d-4006-8ace-e56e694db03d.webp?v=1683264710&width=200" alt="Fast chargers" class="slides1">
+            <h1>Fast charger</h1>
+            <p class="price">₹500</p>
+            <p2 class="ProductDiscription" hidden >80 W SuperVOOC</p2>
+            <p><button onclick="addToCart('product2')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product3">
+            <img src="https://ubonindia.com/cdn/shop/files/smart-watch_2b45c0f6-b197-4701-b2f1-9da384159dc3.webp?v=1683264778&width=200" alt="Wireless speakers" class="slides2">
+            <h1>Smart watch</h1>
+            <p class="price">₹3000</p>
+            <p2 class="ProductDiscription" hidden >Active Bluetooth Calling</p2>
+            <p><button onclick="addToCart('product3')">Add to Cart</button></p>
+        </div>
+    </div>
+    
+    <div class="parent2">
+        <div class="card" id="product4">
+            <img src="https://ubonindia.com/cdn/shop/files/collection-category-image-eight-selfie-sticks.png?v=1683285990&width=400" alt="Selfie sticks" class="slides1" style="width: 15.5rem;">
+            <h1>Selfie stick</h1>
+            <p class="price">₹1000</p>
+            <p2 class="ProductDiscription" hidden >Bluetooth Selfie Stick</p2>
+            <p><button onclick="addToCart('product4')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product5">
+            <img src="https://ubonindia.com/cdn/shop/files/earbuds-1.webp?v=1683264800&width=200" alt="Headphones" class="slides1">
+            <h1>Wireless Earbuds</h1>
+            <p class="price">₹1500</p>
+            <p2 class="ProductDiscription" hidden >Fast Charging, Pro+ Calling</p2>
+            <p><button onclick="addToCart('product5')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product6">
+            <img src="https://ubonindia.com/cdn/shop/files/headphone_dbac8ef7-c1c2-4b32-96f6-5057bf520243.webp?v=1683264606&width=200" alt="Extension Boards" class="slides2">
+            <h1 id="detailsTitle" >Headphones</h1>
+            <p class="price">₹2500</p>
+            <p2 class="ProductDiscription" hidden >Headphones with Mic</p2>
+            <p><button onclick="addToCart('product6')">Add to Cart</button></p>
+        </div>
+    </div>
+    
+    <div class="details-page" id="detailsPage">
+        <div class="details-container">
+            <span class="close-btn" onclick="closeDetails()" style="color: white;">Close</span>
+            <img src="" alt="Product Details" id="detailsImage" style="height: 21rem; margin-left: -70rem;">
+            <h2 id="detailsTitle"></h2>
+            <p id="detailsDescription" style="font-family: cursive;"></p>
+            <p2 id="product-details" style="font-family: cursive;"></p2>
+            <a href="paymentgateway.html"><button style= "margin-left: -85rem; margin-left: -85rem;
+                display: inline-block;
+                background-color: #3844d8;
+                padding: 11px;
+                width: 200px;
+                color: #ffffff;
+                text-align: center;
+                font-size: 20px;" >Buy Now</button></a>
+            
+        </div>
+    </div>
+                
+    </div><br><br>   
+    
+    
+    <div class="slideshow-container-1">
+        <div class="mySlide1 fade-1">
+            <img src="redwolf1.jpg" alt="" style="width:100%;">
+
+
+        </div>
+        <div class="mySlide1 fade-1">
+            <img src="redwolf2.jpg" alt="" style="width:100%;">
+
+        </div>
+        <div class="mySlide1 fade-1">
+            <img src="redwolf3.jpg" alt="" style="width:100%;">
+            
+
+        </div>
+    </div>
+
+    
+    <!-- card -->
+
+    <div class="parent3">
+        <div class="card" id="product1">
+            <img src="https://ubonindia.com/cdn/shop/files/neckband_5017fde6-303b-46aa-af32-55b2448e7b03.webp?v=1683264640&width=200" alt="Nackband" class="slides1">
+            <h1>Nackband</h1>
+            <p class="price">₹1500</p>
+            <p2 class="ProductDiscription" hidden >ProBass EQCharge</p2>
+            <p><button onclick="addToCart('product1')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product2">
+            <img src="https://ubonindia.com/cdn/shop/files/charger_fa11164e-f41d-4006-8ace-e56e694db03d.webp?v=1683264710&width=200" alt="Fast chargers" class="slides1">
+            <h1>Fast charger</h1>
+            <p class="price">₹500</p>
+            <p2 class="ProductDiscription" hidden >80 W SuperVOOC</p2>
+            <p><button onclick="addToCart('product2')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product3">
+            <img src="https://ubonindia.com/cdn/shop/files/smart-watch_2b45c0f6-b197-4701-b2f1-9da384159dc3.webp?v=1683264778&width=200" alt="Wireless speakers" class="slides2">
+            <h1>Smart watch</h1>
+            <p class="price">₹3000</p>
+            <p2 class="ProductDiscription" hidden >Active Bluetooth Calling</p2>
+            <p><button onclick="addToCart('product3')">Add to Cart</button></p>
+        </div>
+    </div>
+    
+    <div class="parent4">
+        <div class="card" id="product4">
+            <img src="https://ubonindia.com/cdn/shop/files/collection-category-image-eight-selfie-sticks.png?v=1683285990&width=400" alt="Selfie sticks" class="slides1" style="width: 15.5rem;">
+            <h1>Selfie stick</h1>
+            <p class="price">₹1000</p>
+            <p2 class="ProductDiscription" hidden >Bluetooth Selfie Stick</p2>
+            <p><button onclick="addToCart('product4')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product5">
+            <img src="https://ubonindia.com/cdn/shop/files/earbuds-1.webp?v=1683264800&width=200" alt="Headphones" class="slides1">
+            <h1>Wireless Earbuds</h1>
+            <p class="price">₹1500</p>
+            <p2 class="ProductDiscription" hidden >Fast Charging, Pro+ Calling</p2>
+            <p><button onclick="addToCart('product5')">Add to Cart</button></p>
+        </div>
+    
+        <div class="card" id="product6">
+            <img src="https://ubonindia.com/cdn/shop/files/headphone_dbac8ef7-c1c2-4b32-96f6-5057bf520243.webp?v=1683264606&width=200" alt="Extension Boards" class="slides2">
+            <h1>Headphones</h1>
+            <p class="price">₹2500</p>
+            <p2 class="ProductDiscription" hidden >Headphones with Mic</p2>
+            <p><button onclick="addToCart('product6')">Add to Cart</button></p>
+        </div>
+    </div>
+       
+        </div>
+
+
+        
+
+    
+
+        <div>
+        <img src="https://ubonindia.com/collections/daily-deals-dd-ca" alt="">
+    </div>
+
+   <!-- footer -->
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Neckbands</a></li>
+                        <li><a href="#">Fast chargers</a></li>
+                        <li><a href="#">Smart watches</a></li>
+                        <li><a href="#">Wireless speakers</a></li>
+                        <li><a href="#">Power banks</a></li>
+                        <li><a href="#">Wireless Earbuds</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Extension Boards</a></li>
+                        <li><a href="#">Data cables</a></li>
+                        <li><a href="#">Selfie sticks</a></li>
+
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="www.facebook.com/profile.php?id=61553777321124&mibextid=ZbWKwL"><i
+                                class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="www.instagram.com/redwolfhitech?igsh=YnE1amNiNTdiMDI4"><i
+                                class='bx bxl-instagram'></i></a>
+                        <a href="www.linkedin.com/in/ashi-jain-3988252a6"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> -->
+    
+
+
+
+
+
+
+</body>
+<script>
+    function addToCart(productId) {
+        var product = document.getElementById(productId);
+        var productImage = product.querySelector('img').src;
+        var productTitle = product.querySelector('h1').innerText;
+        var productPrice = product.querySelector('.price').innerText;
+        var ProductDiscription = product.querySelector('.ProductDiscription').innerText;
+
+        document.getElementById('detailsImage').src = productImage;
+        document.getElementById('detailsTitle').innerText = productTitle;
+        document.getElementById('detailsDescription').innerText = "Price: " + productPrice;
+        document.getElementById('product-details').innerText = "Product Discription: " + ProductDiscription;
+
+        document.getElementById('detailsPage').style.display = 'flex';
+    }
+
+    function closeDetails() {
+        document.getElementById('detailsPage').style.display = 'none';
+    }
+
+
+    var slideIndex = 0;
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+  }
+
+  // Initial call to start the slideshow
+  showSlides();
+
+
+
+  var slideIndex1 = 0;
+        showSlides1();
+
+        function showSlides1() {
+            var i;
+            var slides = document.getElementsByClassName("mySlide1");
+            
+            // Hide all slides
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            // Increment index and reset to 0 if it exceeds the number of slides
+            slideIndex1++;
+            if (slideIndex1 > slides.length) {
+                slideIndex1 = 1;
+            }
+            
+            // Display the current slide
+            slides[slideIndex1 - 1].style.display = "block";
+            
+            // Change slide every 2000 milliseconds (2 seconds)
+            setTimeout(showSlides1, 2000);
+        }
+        
+</script>
+
+
+</html>
